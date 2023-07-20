@@ -1,46 +1,67 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    color: var(--title-color);
-    font-family: "Satoshi-Bold", sans-serif;
-    font-size: 1.2rem;
+    background-color: #8be6eeba;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    border-top: 0.5px solid var(--border-text-color);
+    height: 50vh;
+    display: flex;;
+}
+.footer__text h1 {
+    font-family: "Cairo";
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1b1b1b;
 }
 
 .footer__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
     width: 100%;
-    height: 100%;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 4rem;
 }
 
-.footer__logo h1 {
-    font-size: 2rem;
-    font-weight: var(--font-bold);
-    margin-left: 2rem;
-    color: var(--title-color);
+.footer__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer__buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    width: 15rem;
+    height: 4rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    font-family: "Cairo";
+}
+
+.footer__container button h1 {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
 }
 
 
-.footer__credits p {
-    font-size: 0.95rem;
-    font-weight: var(--font-medium);
-    margin-left: 2rem;
-    color: var(--title-color);
+.footer__buttons .whatsapp {
+    background: #25d366;
+    outline: none;
+    border: none;
 }
 
-.footer__credits span {
-    font-size: 0.8rem;
-    font-weight: var(--font-medium);
-    margin-left: 2rem;
-    color: var(--title-color);
+.footer__buttons .whatsapp:hover {
+    background: #128c7e;
 }
-

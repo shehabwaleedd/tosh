@@ -66,3 +66,73 @@
     font-weight: 400;
     margin-bottom: 1rem;
 }
+
+@media (max-width: 576px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 40vh;
+        text-align: center;
+        z-index: 1;
+        margin-bottom: 14rem;
+    }
+
+    .intro__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .intro__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .intro__left img {
+        width: 90%;
+        height: 70%;
+        margin-top: 3rem;
+        border-radius: 0;
+    }
+
+    .intro__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
+        gap: 2rem;
+    }
+
+    .intro__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 2rem;
+        text-align: right;
+        gap: 2rem;
+    }
+
+    .intro__text h1 {
+        font-family: "Cairo";
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .intro__text p {
+        font-family: "Cairo";
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+}

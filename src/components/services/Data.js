@@ -1,56 +1,42 @@
-import kirazi from '../../assets/kirazi.webp'
-import toshiba from '../../assets/toshiba.png'
-import samsung from '../../assets/samsung.webp'
-import lg from '../../assets/lg.webp'
-import sanuzi from '../../assets/zanussi.png'
-import sharp from '../../assets/sharp.png'
+import fridges from '../../assets/صيانة-ثلاجات.webp'
+import washing from '../../assets/صيانة-غسالات.webp'
+import tv from '../../assets/صيانة-شاشات.webp'
+import microwave from '../../assets/صيانة-ميكروويف.webp'
+
 
 const Data = [
     {
         id: 1,
-        name: 'Kiriazi',
-        image: kirazi,
-        price: 1000,
-        desc: "صيانة كريازي"
+        title: 'صيانة ثلاجات',
+        img: fridges,
+        desc: 'صيانة ثلاجات ',
+        price: '150 ريال',
+        path: '/fridges'
     },
     {
         id: 2,
-        name: 'Toshiba',
-        image: toshiba,
-        price: 1000,
-        desc: "صيانة توشيبا"
+        title: 'صيانة غسالات',
+        img: washing,
+        desc: 'صيانة غسالات ',
+        price: '150 ريال',
+        path: '/washing'
     },
     {
         id: 3,
-        name: 'Samsung',
-        image: samsung,
-        price: 1000,
-        desc: "صيانة سامسونج"
+        title: 'صيانة شاشات',
+        img: tv,
+        desc: 'صيانة شاشات',
+        price: '150 ريال',
+        path: '/tv'
     },
-
     {
         id: 4,
-        name: 'LG',
-        image: lg,
-        price: 1000,
-        desc: "صيانة ال جي"
+        title: 'صيانة ميكروويف',
+        img: microwave,
+        desc: 'صيانة ميكروويف ',
+        price: '150 ريال',
+        path: '/microwave'
     },
-    {
-        id: 5,
-        name: 'Zanussi',
-        image: sanuzi,
-        price: 1000,
-        desc: "صيانة زانوسي"
-    },
-    {
-        id: 6,
-        name: 'Sharp',
-        image: sharp,
-        price: 1000,
-        desc: "صيانة شارب"
-    },
-
-    
 ]
 
 export default Data

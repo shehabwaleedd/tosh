@@ -59,6 +59,13 @@
 
 
 @media (max-width: 576px) {
+    .brands{
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+        width: 100%;    
+    }
+    
     .brands__container {
         grid-template-columns: repeat(2, 1fr);
         padding: 1rem;

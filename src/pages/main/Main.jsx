@@ -1,6 +1,6 @@
 import React from 'react'
 import './Main.css'
-import main from '../../assets/main1.jpeg'
+import main from '../../assets/intro.webp'
 import Button from 'react-bootstrap/Button';
 import { BsTelephone } from 'react-icons/bs';
 import main2 from '../../assets/main2.webp'
