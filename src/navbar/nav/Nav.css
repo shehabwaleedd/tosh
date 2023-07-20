@@ -1,0 +1,47 @@
+.rtl-navbar .navbar-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    font-family: "Cairo";
+    font-size: 1rem;
+}
+
+.rtl {
+    margin-top: 2rem;
+    font-family: "Cairo";
+    font-size: 3.5rem;
+    direction: rtl;
+    text-align: right;
+    font-weight: 700;
+}
+
+.rtl-text {
+    font-family: "Cairo";
+    font-size: 1.5rem;
+    direction: rtl;
+    text-align: right;
+    font-weight: 700;
+}
+
+.rtl-navbar {
+    position: fixed;
+    z-index: 9999999;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+.rtl-navbar img {
+    width: 10rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.rtl-navbar .navbar-brand {
+    margin-right: 1rem;
+    margin-left: 0;
+    font-family: "Cairo";
+}
