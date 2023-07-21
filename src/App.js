@@ -8,6 +8,8 @@ import i18next from 'i18next';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import MainNavbar from './navbar/nav/Nav';
 import HomePage from './HomePage/HomePage';
+import WhatsappIcon from './components/scrollup/whatsapp/WhatsappIcon';
+import Services from './pages/ourServices/Services';
 
 
 
@@ -15,7 +17,7 @@ function App() {
 
 
 
-  const  location = useLocation();
+  const location = useLocation();
 
   return (
     <div className="App">
@@ -23,9 +25,11 @@ function App() {
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<HomePage />} />
-        </Routes>              
-        </AnimatePresence>
+          <Route path='/services/:name' element={<Services />} />
+        </Routes>
+      </AnimatePresence>
       <ScrollUp />
+      <WhatsappIcon />
       <Footer />
     </div>
   );

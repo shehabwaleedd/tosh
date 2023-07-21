@@ -1,4 +1,4 @@
-.services {
+.servicess {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,7 +6,7 @@
 
 }
 
-.services__container {
+.servicess__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -16,11 +16,11 @@
     margin-bottom: 2rem;
 }
 
-.services__container a {
+.servicess__container a {
     text-decoration: none;
 }
 
-.services h2 {
+.servicess h2 {
     font-family: "Cairo";
     font-size: 4rem;
     font-weight: 700;
@@ -63,7 +63,7 @@
 }
 
 @media (max-width: 576px) {
-    .services__container {
+    .servicess__container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;

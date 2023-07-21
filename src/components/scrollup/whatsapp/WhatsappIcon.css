@@ -1,28 +1,33 @@
-.scroll-up {
+.whatsappIcon{
     position: fixed;
     bottom: 3rem;
-    right: 2rem;
-    margin: 1rem;
-    border-radius: 50%;
-    background-color: var(--container-color);
-    color: var(--accent-color);
+    left: 2rem;
+    border-radius: 4rem;
+    background-color: #25d366;
+    color: #fff;
     box-shadow: var(--box-shadow);
     cursor: pointer;
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1 );
     z-index: 9999999;
+    padding: 0.9rem 0.0rem;
+}
+
+.whatsappIcon a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
 }
 
 
-.scroll-up:hover {
+.whatsappIcon:hover {
     transform: translateY(-2px);
-    background-color: var(--accent-color);
-    color: var(--container-color);
+    background-color: #128c7e;
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1 );
 }
 
 .home__scroll-up  {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bolder;
-    padding: 12.8px;
+
 }
 

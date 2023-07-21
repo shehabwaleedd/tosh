@@ -1,7 +1,7 @@
 .brands{
     display: flex;
     flex-direction: column;
-    height: 130vh;
+    min-height: 160vh;
     width: 100%;
 
 }
@@ -62,7 +62,7 @@
     .brands{
         display: flex;
         flex-direction: column;
-        height: 85vh;
+        min-height: 85vh;
         width: 100%;    
     }
     

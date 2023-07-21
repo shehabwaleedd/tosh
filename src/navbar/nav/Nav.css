@@ -1,9 +1,21 @@
 .rtl-navbar .navbar-nav {
     display: flex;
-    flex-direction: row-reverse;
+    direction: rtl;
     gap: 1rem;
     font-family: "Cairo";
     font-size: 1rem;
+}
+
+.nav {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 8vh;
+    z-index: 999999;
 }
 
 .rtl {
@@ -12,7 +24,8 @@
     font-size: 3.5rem;
     direction: rtl;
     text-align: right;
-    font-weight: 700;
+    font-weight: 900;
+    padding-right: 2rem;
 }
 
 .rtl-text {
@@ -25,13 +38,8 @@
 
 .rtl-navbar {
     position: fixed;
-    z-index: 9999999;
-    background: rgba(255, 255, 255, 0.72);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.9px);
-    -webkit-backdrop-filter: blur(7.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
     width: 100%;
+    height: 8vh;
 }
 
 .rtl-navbar img {
@@ -40,13 +48,39 @@
     margin-right: 1rem;
 }
 
-.rtl-navbar .navbar-brand {
-    margin-right: 1rem;
-    margin-left: 0;
-    font-family: "Cairo";
+.rtl-navbar .dropdown-menu {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+}
+
+/* Style the hamburger menu button */
+.rtl-navbar .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Center the hamburger menu button */
+.rtl-navbar .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @media (max-width: 576px) {
+
+    .rtl-navbar .navbar-nav {
+        background-color: #fff;
+        padding: 1rem;
+        margin-top: 3rem;
+        width: 90vw;
+    }
+
+    .rtl-navbar .navbar-brand {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
     .rtl-navbar .navbar-nav {
         display: flex;
         flex-direction: column;
@@ -72,16 +106,7 @@
         font-weight: 700;
     }
 
-    .rtl-navbar {
-        position: fixed;
-        z-index: 9999999;
-        background: rgba(255, 255, 255, 0.72);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(7.9px);
-        -webkit-backdrop-filter: blur(7.9px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        width: 100%;
-    }
+
 
     .rtl-navbar img {
         width: 10rem;

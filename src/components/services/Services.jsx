@@ -7,9 +7,9 @@ import { BsTelephone } from 'react-icons/bs';
 
 const Services = () => {
     return (
-        <section className='services'>
+        <section className='servicess'>
             <h2>خداماتنا</h2>
-            <div className="services__container containered">
+            <div className="servicess__container containered">
                 {Data.map((item, index) => (
                     <Link to={item.path} className="service_card" key={index}>
                         <div className="service_card_img">
@@ -22,12 +22,12 @@ const Services = () => {
                 ))}
             </div>
             <div className="main__buttons">
-                        <Button variant="primary" className='phonenummer'>
-                            <BsTelephone style={{ fontSize: "1.3rem" }} />
-                            <h1>01025645234</h1>
-                        </Button>{' '}
-                        <Button variant="primary">تواصل معنا</Button>{' '}
-                    </div>
+                <Button variant="primary" className='phonenummer'>
+                    <BsTelephone style={{ fontSize: "1.3rem" }} />
+                    <h1>01025645234</h1>
+                </Button>{' '}
+                <Button variant="primary">تواصل معنا</Button>{' '}
+            </div>
         </section>
     )
 }
